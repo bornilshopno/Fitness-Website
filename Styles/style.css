@@ -50,6 +50,8 @@ header,.banner, .habit, .run-extra-milage,.must-avoid, .team-section,.training-e
 
 body{
     background-color: black;
+    background-image: linear-gradient(90deg, black, 
+    rgba(20, 20, 19, ));
     font-family: Inter;
     font-weight: 400;
 }
@@ -221,16 +223,48 @@ flex:0.45;
     font-size:0.8rem;
     position:absolute;
 }
-.training-detail1,.training-detail3,.training-detail5,.training-detail6{
-    left:20px; bottom: 20px;
+.training-detail1,.training-detail5,.training-detail6{
+    left:20px; bottom: 10px;
 }
 .training-detail2{
-    left:20px; top: 20px;}
+    left:20px; top: 10px;}
+.training-detail3{
+    right:20px; bottom: 10px;
+}
 .training-detail4{
-        right:20px; top: 20px;}
+        right:20px; top: 10px;}
 .row {
     display:grid;
 }
+.card2{
+    background-color: rgba(255, 0, 0, 0.676);
+}
+.card2 img{
+    opacity: .5;
+}
+.card1{
+    background-color:grey;
+}
+.card1 img{
+    opacity: .5;
+}
+.card5{
+    background-color:green;
+}
+.card5 img{
+    opacity: .5;
+}
+.card3 img,.card4 img{
+    filter:grayscale();
+}
+
+.card6{
+    background-color:skyblue;
+}
+.card6 img{
+    opacity: .6;
+}
+
 #row1{
     grid-template-columns: .75fr 1.5fr .75fr;
 }
@@ -310,14 +344,17 @@ input::placeholder
 }
 .bad-habit-cards{
     position:relative;
-    background-color: #E6533C;
-    border:2px solid red;
-}
+    
+     }
+   .bad-habit-cards img{
+    border-radius: 10px;
+    filter: grayscale(80%);
+   }
 
 .bad-habit-cards p{
     position:absolute;
     bottom:0;right:0;
-    color:red;
+    color:#E6533C;
     font-size:2.5rem;
     font-weight: 900;
     line-height: 1;
@@ -325,8 +362,11 @@ input::placeholder
 .bad-habit-card-container{
     display:grid;
     grid-template-columns: repeat(3,1fr);
-    gap:2%;
+    gap: 1rem;
+    padding:1rem;
+    border-radius: 2rem;
     margin-bottom:4rem;
+    background-color: rgb(33, 31, 31);
 }
 
 /* Team Section */
@@ -346,7 +386,6 @@ input::placeholder
 }
 .team-container{
     text-align: center;
-    border:2px solid blue;
 }
 
 .team-container p{

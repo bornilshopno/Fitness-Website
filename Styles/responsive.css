@@ -4,12 +4,17 @@
 {
     *{margin:0 auto;}
     /* Header Section */
+
+    .logo{
+        margin-left:0;
+    }
     .navbar{
         display:none
     }
 
     .ham-burger{
         display: block;
+        margin-right:0;
     }
 
     /* Banner Section */
@@ -68,11 +73,9 @@
     flex-direction: column;gap:03rem;
     text-align:left;
 }
-.footer-logo, .footer-links{
-    flex:1;
-}
-.footer-container>div{
-    flex:1;
+
+.footer-links{
+    margin-left: 0;
 }
 }
 
