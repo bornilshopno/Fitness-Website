@@ -48,6 +48,12 @@
         flex-direction:column;
   }
 
+  /* Must Avoid Section */
+  .bad-habit-card-container{
+    grid-template-columns: repeat(1,1fr);
+    gap:50px;
+   }
+
   /* Team Section */
   .trainer-container{
     grid-template-columns: repeat(1,1fr);
@@ -99,7 +105,10 @@
     text-align:left;
     padding-left:10%;
   }
-
+  /* Must Avoid Section */
+  .bad-habit-card-container{
+    grid-template-columns: repeat(2,1fr);
+   }
 
     /* Footer Section */
 .footer-container{
