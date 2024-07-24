@@ -30,7 +30,7 @@ h2{
     align-items: center;
 }
 
-header,.banner, .habit, .run-extra-milage,.team-section,.training-exercise, footer{
+header,.banner, .habit, .run-extra-milage,.must-avoid-container,.team-section,.training-exercise, footer{
     margin:2.5rem auto 0 auto;
     width:80%;
 
@@ -300,6 +300,33 @@ input::placeholder
 /* .activity-factor{
     column-span:2fr;
 } */
+
+/* Must Avoid Section */
+
+.must-avoid-container>p{
+    text-align: center;
+    margin-bottom:1.5rem;
+}
+.bad-habit-cards{
+    position:relative;
+    background-color: #E6533C;
+}
+
+.bad-habit-cards p{
+    position:absolute;
+    bottom:0;right:0;
+    color:red;
+    font-size:2.5rem;
+    font-weight: 900;
+    line-height: 1;
+}
+.bad-habit-card-container{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:2%;
+    margin-bottom:4rem;
+}
+
 /* Team Section */
 .trainer-card{
     position:relative
