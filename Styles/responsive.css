@@ -1,0 +1,112 @@
+/* responsiveness styling for Mobile devices */
+
+@media screen and (max-width:576px)
+{
+    *{margin:0 auto;}
+    /* Header Section */
+    .navbar{
+        display:none
+    }
+
+    .ham-burger{
+        display: block;
+    }
+
+    /* Banner Section */
+    .banner{
+        grid-template-columns: repeat(1,1fr);
+        gap:0%;}
+
+    /* Habit Section */
+
+    .habit-card-container{
+    flex-direction: column;
+    padding:2rem;
+    }
+
+/* Run Extra Milage Section */
+    .run-extra-milage-container{
+       flex-direction: column;
+    }
+    
+    .run-content, .run-image{
+    flex:1;
+    }
+
+    /* Training and Excercise Section */
+#row1{
+    grid-template-columns: repeat(1,1fr);
+}
+
+#row2{
+    grid-template-columns: repeat(1,1fr);
+}
+
+
+    /* BMI Calculator Section */
+    .bmi-calculation{
+        flex-direction:column;
+  }
+
+  /* Team Section */
+  .trainer-container{
+    grid-template-columns: repeat(1,1fr);
+    gap:1rem;
+    padding:1rem;
+    border-radius:2rem;
+    background-color: rgb(33, 31, 31);
+}
+
+/* Footer Section */
+.footer-container,.footer-links{
+    flex-direction: column;gap:03rem;
+    text-align:left;
+}
+.footer-logo, .footer-links{
+    flex:1;
+}
+.footer-container>div{
+    flex:1;
+}
+}
+
+/* CSS for Tablet type device */
+@media screen and (min-width:577px) and (max-width:992px){
+    *{margin:0 0;}
+    /* header, .banner{
+        width:90%;
+    } */
+    /* Banner Section */
+    .banner{
+        grid-template-columns: repeat(1,1fr);
+        gap:0%;}
+        /* Habit Section */
+        .habit-card-container{
+            flex-wrap:wrap;
+            gap:5%;
+        }
+    .habit-card{
+        width:46%;
+        margin-bottom:5rem;
+    } 
+       /* BMI Calculator Section */
+       .bmi-calculation{
+        flex-direction:column;
+        align-items: normal;
+  }
+
+  .bmi-calculator h2, .bmi-calc>p{
+    text-align:left;
+    padding-left:10%;
+  }
+
+
+    /* Footer Section */
+.footer-container{
+    flex-direction: column;
+}
+.footer-links{
+    width:100%;
+
+}
+}

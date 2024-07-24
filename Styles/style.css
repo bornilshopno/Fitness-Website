@@ -1,0 +1,369 @@
+*{
+    margin:0;
+    padding:0;
+    color:white;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.cdnfonts.com/css/miama');
+/* Shared Styles */
+img{
+    width:100%;
+    height:100%;
+}
+
+.desc{
+    font-size:1rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+h2{
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-align: center;
+    margin:2rem auto;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header,.banner, .habit, .run-extra-milage,.team-section,.training-exercise, footer{
+    margin:2.5rem auto 0 auto;
+    width:80%;
+
+}
+
+.btn-primary{
+    background-color: #E6533C;
+    font-size:1rem;
+    border:2px solid #E6533C;
+    border-radius: 1rem;
+    padding:.5rem 1rem;
+    width:10rem;
+    text-align: center;
+
+}
+
+body{
+    background-color: black;
+    font-family: Inter;
+    font-weight: 400;
+}
+
+/**Header Section**/
+.ham-burger{
+    display: none;
+}
+.brand-name{
+    color:#E6533C;
+    font-size: 2.5rem;
+    font-style: italic;
+    font-weight: 800;
+}
+
+.navbar{
+    border:none;
+    border-radius:1rem;
+    background-color: rgba(120, 109, 109, 0.3);
+    padding:.25rem;
+}
+nav li{
+    list-style: none;
+    text-align:center;
+    padding:.5rem 1rem;
+    border:none;
+    border-radius:2rem;
+    width:3.5rem;}
+nav a{
+    text-decoration: none;
+    border:none;
+  
+}
+
+/* Banner Section */
+.banner{
+    /* height:600px; */
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:5%;
+    justify-items:center;
+}
+.banner img{
+    height:100%;
+}
+
+.brand{
+    font-size:5rem;
+    font-weight: 900;
+    margin:6rem auto 3rem auto;
+    line-height:1;
+}
+.specialfont{
+    font-family: 'Miama', sans-serif;
+    font-size:6rem;
+    font-weight: 300;
+}
+
+.banner-buttons{
+    margin:2rem auto;
+    width:25rem;
+
+}
+
+.btn-secondary{
+    background-color:black;
+    font-size:1rem;
+    border:none;
+    border-radius: 1rem;
+    padding:.5rem 1rem;
+    width:10rem;
+    border:2px solid white;
+
+}
+
+.banner-part1, .banner-part2{
+    flex:.475;
+}
+
+.banner-part2{
+    position:relative;
+}
+
+.video-tutorial{
+    position:absolute;
+    left:0; bottom:100px;
+    padding:.5rem;
+    background-color: rgba(172, 172, 157,.5);
+    border-radius: .7rem;
+}
+
+.circle{
+    height:2rem;
+    width:2rem;
+    border-radius:50%;
+    background-color:#E6533C;
+    margin-right:.5rem;
+}
+
+.banner h2{
+    text-align: left;
+    margin:0;
+}
+.workout-vedio{
+    position:absolute;
+    right:-50px; top:100px;
+    padding:.3rem;
+    background-color: rgba(172, 172, 157,.5);
+    border-radius: .7rem;
+    width:8.5rem;height:3.5rem;
+    text-align:left;}
+
+/* Habit Section */
+
+.habit-container{
+text-align:center;}
+
+.habit-container>p{
+    margin-bottom:2rem;
+}
+
+.habit-card-container{
+    gap:3rem;
+    padding:2rem;
+    }
+    .habit-card{
+        text-align:center;
+    }
+.habit-container img{
+    border-radius:50%;
+    /* padding:1rem; */
+}
+
+/* Run Extra Milage Section */
+
+.run-extra-milage-container{
+    gap:5%;
+    padding:2rem;
+    border-radius:2rem;
+    background-color: rgb(33, 31, 31);
+}
+
+.run-content, .run-image{
+flex:0.45;
+}
+
+.run-image img{
+    border-radius:1rem;
+}
+
+.run-content>h2{
+    text-align: left;
+}
+.run-content .btn-primary{
+    margin:2rem 0;
+}
+/* Training and Excercise Section */
+
+.training-exercise h2{
+    text-align:left;
+}
+.training-card-container{
+    margin:2rem auto;
+}
+.training-card{
+    position:relative;
+}
+.training-card p{
+    font-size:0.8rem;
+    position:absolute;
+}
+.training-detail1,.training-detail3,.training-detail5,.training-detail6{
+    left:20px; bottom: 20px;
+}
+.training-detail2{
+    left:20px; top: 20px;}
+.training-detail4{
+        right:20px; top: 20px;}
+.row {
+    display:grid;
+}
+#row1{
+    grid-template-columns: .75fr 1.5fr .75fr;
+}
+
+#row2{
+    grid-template-columns: 1.25fr .75fr 1fr;
+}
+
+
+/* BMI Calculator Section */
+.bmi-calculator p{
+    text-align: center;
+    margin-bottom:3rem;
+}
+.bmi-calculation{
+    background-color: rgb(33, 31, 31);
+    padding:1rem 10%;
+    gap:20%;
+    margin-bottom:2.5rem;
+}
+.chart{
+    flex:35%;
+margin:1rem 1rem auto;}
+
+table{
+   border-collapse: collapse;
+   margin-top:2rem;
+   }
+
+table td{
+    color: rgba(255, 255, 255, 0.5);
+    border:1px solid rgba(255, 255, 255, 0.5);
+    padding:1rem;
+}
+thead td{
+    color: white;
+}
+.calculator{
+    margin:1rem;
+    flex:50%;
+}
+.calculator p{
+    margin:1rem 0;
+}
+
+.form-input{
+    display: grid; gap:1rem;
+    grid-template-columns: repeat(2,1fr);
+}
+input,select{
+    color: rgba(255, 255, 255, 0.5);
+    border-radius: .5rem;
+    background-color: grey;
+    border:none;
+    height:3rem;
+    width:80%;
+}
+input::placeholder
+{
+    color: rgba(255, 255, 255, 0.5);}
+
+.form-buttons{
+    display: grid; gap:1rem;
+    grid-template-columns: repeat(2,1fr);
+    margin-top:1.5rem;
+    }
+
+/* .activity-factor{
+    column-span:2fr;
+} */
+/* Team Section */
+.trainer-card{
+    position:relative
+}
+
+.trainer-intro{
+    position:absolute;
+    bottom:0;
+    left:1rem;
+}
+
+.trainer-card img{
+    border-radius: 1rem;
+    filter: grayscale(70%);
+}
+.team-container{
+    text-align: center;
+}
+
+.team-container p{
+    margin-bottom:2rem;
+}
+.trainer-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:1rem;
+    padding:1rem;
+    border-radius:2rem;
+    background-color: rgb(33, 31, 31);
+}
+/* Footer Section */
+
+footer{
+    background-color: rgb(33, 31, 31);padding:2rem 10%;
+}
+
+footer .brand-name{
+    font-size:5rem;
+    font-weight: 900;
+    padding:1rem 0;
+}
+.footer-container, .getstarted{
+    gap:10%;
+}
+.footer-container{
+    margin-bottom:2rem;
+}
+.footer-container>div{
+    flex:0.5;
+}
+
+.getstarted li,a{
+    list-style: none;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.25rem;
+    padding: 0.4rem 0;
+}
+
+.getstarted h3{
+font-size:1.6rem;
+padding:1rem 0;
+}
+.copyright-text{
+    text-align: center;
+    padding:2rem;
+}
