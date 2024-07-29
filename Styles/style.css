@@ -200,6 +200,8 @@ flex:0.45;
 
 .run-image img{
     border-radius:1rem;
+    object-fit: none;
+    object-position: 66% 33%;
 }
 
 .run-content>h2{
