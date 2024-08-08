@@ -89,6 +89,7 @@ nav a{
 /* Banner Section */
 .banner{
     /* height:600px; */
+    background-image: radial-gradient(rgba(33, 33, 33, 0.2), black);
     display:grid;
     grid-template-columns: repeat(2,1fr);
     gap:5%;
@@ -157,12 +158,17 @@ nav a{
 }
 .workout-vedio{
     position:absolute;
-    right:-50px; top:100px;
-    padding:.3rem;
+    right:-30px; top:150px;
+    padding:.5rem;
     background-color: rgba(172, 172, 157,.5);
     border-radius: .7rem;
-    width:8.5rem;height:3.5rem;
-    text-align:left;}
+    border:none;
+    text-align:left;
+    line-height: 1;}
+
+.workout-vedio p{
+    font-size:.8rem;
+}
 
 /* Habit Section */
 
@@ -277,8 +283,12 @@ flex:0.45;
 
 
 /* BMI Calculator Section */
-.bmi-calculator p{
+.bmi-calc p{
     text-align: center;
+    margin-bottom:3rem;
+}
+.calculator p{
+    text-align: left;
     margin-bottom:3rem;
 }
 .bmi-calculation{
