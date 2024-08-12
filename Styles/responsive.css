@@ -111,6 +111,14 @@
         width:46%;
         margin-bottom:5rem;
     } 
+
+    .run-extra-milage-container{
+        flex-direction: column;
+        gap:5%;
+        padding:2rem;
+        border-radius:2rem;
+        background-color: rgb(33, 31, 31);
+    }   
        /* BMI Calculator Section */
        .bmi-calculation{
         flex-direction:column;
