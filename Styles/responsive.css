@@ -3,7 +3,7 @@
 @media screen and (max-width:576px)
 {
     *{margin:0 auto;}
-    /* Header Section */
+ /* Header Section */
 
     .logo{
         margin-left:0;
@@ -17,7 +17,7 @@
         margin-right:0;
     }
 
-    /* Banner Section */
+/* Banner Section */
     .banner{
         grid-template-columns: repeat(1,1fr);
         gap:0%;}
@@ -31,7 +31,9 @@
 
     .habit-card-container{
     flex-direction: column;
-    padding:2rem;
+    }
+    .habit-card p{
+        margin-bottom: 2rem;
     }
 
 /* Run Extra Milage Section */
@@ -44,50 +46,50 @@
     }
 
     /* Training and Excercise Section */
-#row1{
+    #row1{
     grid-template-columns: repeat(1,1fr);
-}
+    }
 
-#row2{
+    #row2{
     grid-template-columns: repeat(1,1fr);
-}
+    }
 
-
-    /* BMI Calculator Section */
+/* BMI Calculator Section */
     .bmi-calculation{
         flex-direction:column;
-  }
+    }
 
-  /* Must Avoid Section */
-  .bad-habit-card-container{
-    grid-template-columns: repeat(1,1fr);
-    gap:50px;
-   }
+/* Must Avoid Section */
+    .bad-habit-card-container{
+        grid-template-columns: repeat(1,1fr);
+        gap:50px;
+    }
 
-  /* Team Section */
-  .trainer-container{
-    grid-template-columns: repeat(1,1fr);
-    gap:1rem;
-    padding:1rem;
-    border-radius:2rem;
-    background-color: rgb(33, 31, 31);
-}
+/* Team Section */
+    .trainer-container{
+        grid-template-columns: repeat(1,1fr);
+        gap:1rem;
+        padding:1rem;
+        border-radius:2rem;
+        background-color: rgb(33, 31, 31);
+    }
 
 /* Footer Section */
-.footer-container,.footer-links{
-    flex-direction: column;gap:03rem;
-    text-align:left;
-}
+    .footer-container,.footer-links{
+        flex-direction: column;gap:03rem;
+      text-align:left;
+    }
 
-.footer-links{
+    .footer-links{
     margin-left: 0;
-}
+    }
 }
 
 /* CSS for Tablet type device */
 @media screen and (min-width:577px) and (max-width:992px){
     *{margin:0 0;}
-  /*Nav Section*/
+  
+/*Header Section*/
     .navbar{
         display:none
     }
@@ -97,21 +99,25 @@
         margin-right:0;
     }
 
-    /* Banner Section */
+/* Banner Section */
     
     .banner{
         grid-template-columns: repeat(1,1fr);
         gap:0%;}
-        /* Habit Section */
-        .habit-card-container{
-            flex-wrap:wrap;
-            gap:5%;
-        }
+
+/* Habit Section */
+    .habit-card-container{
+        flex-wrap:wrap;
+        gap:5%;
+    }
     .habit-card{
         width:46%;
         margin-bottom:5rem;
     } 
-
+    .habit-card p{
+        padding:1.5rem 0;
+    }
+/* Run Extra Milage Section */
     .run-extra-milage-container{
         flex-direction: column;
         gap:5%;
@@ -119,37 +125,51 @@
         border-radius:2rem;
         background-color: rgb(33, 31, 31);
     }   
-       /* BMI Calculator Section */
-       .bmi-calculation{
+/* BMI Calculator Section */
+    .bmi-calculation{
         flex-direction:column;
         align-items: normal;
-  }
-.chart{
-    text-align:center;
-}
+    }
+    .chart{
+        text-align:center;
+    }
 
-.chart table{
+    .chart table{
     margin:5px auto;
-}
-  .bmi-calculator h2, .bmi-calc>p{
-    text-align:center;
-    padding-left:10%;
-  }
+    }
+    .bmi-calculator h2, .bmi-calc>p{
+     text-align:center;
+     padding-left:10%;
+    }
 
-  .calculator h3, .calculator p{
-    text-align:center;
-  }
-  /* Must Avoid Section */
-  .bad-habit-card-container{
-    grid-template-columns: repeat(2,1fr);
-   }
+    .calculator h3, .calculator p{
+      text-align:center;
+    }
+/* Must Avoid Section */
+    .bad-habit-card-container{
+         grid-template-columns: repeat(2,1fr);
+    }
 
-    /* Footer Section */
-.footer-container{
-    flex-direction: column;
-}
-.footer-links{
-    width:100%;
+/* Team Section */
+    .trainer-container{
+     grid-template-columns: repeat(2,1fr);
+     }
 
+/* Footer Section */
+    .footer-container{
+      flex-direction: column;
+    }
+    .footer-links{
+        width:100%;
+    }
 }
+
+@media screen and (min-width:993px) {
+    .habit-card{
+        text-align:center;
+        width:20%
+    }
+    .habit-card p{
+        height:100px
+    }
 }

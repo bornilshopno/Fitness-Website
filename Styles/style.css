@@ -6,8 +6,6 @@
     color:white;
 }
 
-
-
 /* Shared Styles */
 img{
     width:100%;
@@ -34,7 +32,6 @@ h2{
 header,.banner, .habit, .run-extra-milage,.must-avoid, .team-section,.training-exercise, footer{
     margin:2.5rem auto 0 auto;
     width:80%;
-
 }
 
 .btn-primary{
@@ -45,7 +42,6 @@ header,.banner, .habit, .run-extra-milage,.must-avoid, .team-section,.training-e
     padding:.5rem 1rem;
     width:10rem;
     text-align: center;
-
 }
 
 body{
@@ -83,7 +79,6 @@ nav li{
 nav a{
     text-decoration: none;
     border:none;
-  
 }
 
 /* Banner Section */
@@ -114,7 +109,6 @@ nav a{
 .banner-buttons{
     margin:2rem auto;
     width:25rem;
-
 }
 
 .btn-secondary{
@@ -125,7 +119,6 @@ nav a{
     padding:.5rem 1rem;
     width:10rem;
     border:2px solid white;
-
 }
 
 .banner-part1, .banner-part2{
@@ -180,15 +173,19 @@ text-align:center;}
 }
 
 .habit-card-container{
-    gap:3rem;
-    padding:2rem;
-    }
-    .habit-card{
-        text-align:center;
-    }
+    gap:5%;
+    padding:2%;
+}
+.habit-card h3{
+    padding:1rem 0;
+}
+
+.habit-card{
+    text-align:center;
+}
+
 .habit-container img{
     border-radius:50%;
-    /* padding:1rem; */
 }
 
 /* Run Extra Milage Section */
@@ -216,6 +213,7 @@ flex:0.45;
 .run-content .btn-primary{
     margin:2rem 0;
 }
+
 /* Training and Excercise Section */
 
 .training-exercise h2{
@@ -281,7 +279,6 @@ flex:0.45;
     grid-template-columns: 1.25fr .75fr 1fr;
 }
 
-
 /* BMI Calculator Section */
 .bmi-calc p{
     text-align: center;
@@ -342,11 +339,7 @@ input::placeholder
     display: grid; gap:1rem;
     grid-template-columns: repeat(2,1fr);
     margin-top:1.5rem;
-    }
-
-/* .activity-factor{
-    column-span:2fr;
-} */
+}
 
 /* Must Avoid Section */
 
@@ -356,12 +349,11 @@ input::placeholder
 }
 .bad-habit-cards{
     position:relative;
-    
-     }
-   .bad-habit-cards img{
+}
+.bad-habit-cards img{
     border-radius: 10px;
     filter: grayscale(80%);
-   }
+}
 
 .bad-habit-cards p{
     position:absolute;
@@ -395,7 +387,7 @@ input::placeholder
 .trainer-card img{
     border-radius: 1rem;
     filter: grayscale(70%);
-}
+ }
 .team-container{
     text-align: center;
 }
@@ -411,6 +403,7 @@ input::placeholder
     border-radius:2rem;
     background-color: rgb(33, 31, 31);
 }
+
 /* Footer Section */
 
 footer{
