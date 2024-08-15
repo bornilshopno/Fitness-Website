@@ -4,6 +4,15 @@
 {
     *{margin:0;
     padding:0;}
+
+    .btn-primary{
+        padding:.2rem .5rem;
+        width:9rem;
+        }
+    .btn-secondary{
+        padding:.2rem .5rem;
+        width:9rem;
+       }   
  /* Header Section */
 
     .logo{
@@ -28,7 +37,7 @@
     .workout-vedio{
         right:0px; top:100px;}
 
-    /* Habit Section */
+/* Habit Section */
 
     .habit-card-container{
     flex-direction: column;
@@ -46,7 +55,7 @@
     flex:1;
     }
 
-    /* Training and Excercise Section */
+/* Training and Excercise Section */
     #row1{
     grid-template-columns: repeat(1,1fr);
     }
@@ -69,22 +78,21 @@
 /* Team Section */
     .trainer-container{
         grid-template-columns: repeat(1,1fr);
-        gap:1rem;
-        padding:1rem;
-        border-radius:2rem;
-        background-color: rgb(33, 31, 31);
     }
 
 /* Footer Section */
     .footer-container,.footer-links{
-        flex-direction: column;gap:03rem;
-      text-align:left;
+        flex-direction: column;
+        gap:03rem;
+        justify-content: left;
+        width:90%;
+        margin:0 auto;
     }
-
-    .footer-links{
-    margin-left: 0;
-    }
+    .footer-container div{
+        width:100%;
+    } 
 }
+
 
 /* CSS for Tablet type device */
 @media screen and (min-width:577px) and (max-width:992px){
@@ -127,25 +135,13 @@
         background-color: rgb(33, 31, 31);
     }   
 /* BMI Calculator Section */
-    .bmi-calculation{
-        flex-direction:column;
-        align-items: normal;
-    }
-    .chart{
-        text-align:center;
-    }
+.bmi-calculation{
+    flex-direction:column;
+}
+.bmi-calculation div{
+    width:100%;
+}
 
-    .chart table{
-    margin:5px auto;
-    }
-    .bmi-calculator h2, .bmi-calc>p{
-     text-align:center;
-     padding-left:10%;
-    }
-
-    .calculator h3, .calculator p{
-      text-align:center;
-    }
 /* Must Avoid Section */
     .bad-habit-card-container{
          grid-template-columns: repeat(2,1fr);

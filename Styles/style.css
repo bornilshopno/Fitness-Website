@@ -108,6 +108,7 @@ nav a{
 
 .banner-buttons{
     margin:2rem auto;
+    justify-content: space-evenly;
 }
 
 .btn-secondary{
